@@ -1,0 +1,33 @@
+﻿@model CategoryModel
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Add New Category</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav"></div></div>
+        </nav>
+        <br>
+</body>
+<div class="container">
+    @if(ViewBag.IsSuccess==true)
+    {
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Congratulations!</strong> New Category Added Successfully. <br/>
+    Click <a asp-controller="Category" asp-action="Index" asp-route-id="@ViewBag.Id">here</a> to view the details.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    }
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control"/>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div><br/>
+        <div class="form-group">
+            <input type="submit" value="Add Category" class="btn btn-primary"/>
+        </div>
+    </form>
+</div>
