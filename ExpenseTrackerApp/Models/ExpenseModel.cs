@@ -7,8 +7,9 @@ namespace ExpenseTrackerApp.Models
         [Key]
         public int Eid { get; set; }
 
-        [StringLength(10,MinimumLength =10,ErrorMessage = "Please enter correct date")]
         [Required(ErrorMessage = "Please select the date")]
+        //[StringLength(10,MinimumLength =10,ErrorMessage = "Please enter correct date")]
+        [CustomDateValidator]
         public string Date { get; set; }
 
         [Required(ErrorMessage = "Please enter the amount")]
