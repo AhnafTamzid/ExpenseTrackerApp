@@ -5,16 +5,18 @@ namespace ExpenseTrackerApp.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ICategoryRepository _categoryRepository;
+        //private readonly ICategoryRepository _categoryRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public CategoryController(ICategoryRepository categoryRepository)
+        public CategoryController(IUnitOfWork unitOfWork)
         {
-            _categoryRepository = categoryRepository;
+            _unitOfWork = unitOfWork;
+            //_categoryRepository = categoryRepository;
         }
 
         public ViewResult Index()
         {
-            var model = _categoryRepository.GetAllCategory();
+            var model = _unitOfWork.Categories.GetAllCategory();
             return View(model);
         }
 
@@ -30,7 +32,7 @@ namespace ExpenseTrackerApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                var categoryModel = _categoryRepository.Add(model);
+                var categoryModel = _unitOfWork.Categories.Add(model);
 
                 int id = model.Cid;
                 if (id > 0 && categoryModel.Name != null)
@@ -44,7 +46,7 @@ namespace ExpenseTrackerApp.Controllers
 
         public ViewResult Edit(int id,bool isSuccess = false, int cid = 0)
         {
-            CategoryModel category = _categoryRepository.GetCategory(id);
+            CategoryModel category = _unitOfWork.Categories.GetCategory(id);
 
             ViewBag.IsSuccess = isSuccess;
             ViewBag.Id = cid;
@@ -56,7 +58,7 @@ namespace ExpenseTrackerApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                var categoryModel = _categoryRepository.Update(model);
+                var categoryModel = _unitOfWork.Categories.Update(model);
 
                 int id = model.Cid;
                 if (id > 0 && categoryModel.Name != null)
@@ -70,7 +72,7 @@ namespace ExpenseTrackerApp.Controllers
 
         public IActionResult Delete(int id)
         {
-            _categoryRepository.Delete(id);
+            _unitOfWork.Categories.Delete(id);
             return RedirectToAction(nameof(Index));
         }
     }

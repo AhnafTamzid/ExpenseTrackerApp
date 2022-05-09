@@ -9,8 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 string cs = "server=.;database=ExpenseTrackerApp;trusted_connection=true";
 builder.Services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(cs));
-builder.Services.AddScoped<IExpenseRepository, ExpenseRepository>();
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+//builder.Services.AddScoped<IExpenseRepository, ExpenseRepository>();
+//builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 #if DEBUG
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();

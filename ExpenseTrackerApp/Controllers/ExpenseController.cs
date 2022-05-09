@@ -6,24 +6,27 @@ namespace ExpenseTrackerApp.Controllers
 {
     public class ExpenseController : Controller
     {
-        private readonly IExpenseRepository _expenseRepository;
-        private readonly ICategoryRepository _categoryRepository;
+        //private readonly IExpenseRepository _expenseRepository;
+        //private readonly ICategoryRepository _categoryRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public ExpenseController(IExpenseRepository expenseRepository, ICategoryRepository categoryRepository)
+        public ExpenseController(IUnitOfWork unitOfWork)
         {
-            _expenseRepository = expenseRepository;
-            _categoryRepository = categoryRepository;
+            _unitOfWork = unitOfWork;
+            //_expenseRepository = expenseRepository;
+            //_categoryRepository = categoryRepository;
         }
         public ViewResult Index()
         {
-            var model = _expenseRepository.GetAllExpense();
+            var model = _unitOfWork.Expenses.GetAllExpense();
+            //var model = _expenseRepository.GetAllExpense();
         
             return View(model);
         }
 
         public ViewResult Create(bool isSuccess = false, int id=0)
         {
-            ViewBag.Category = new SelectList(_categoryRepository.GetAllCategory(),"Cid","Name");
+            ViewBag.Category = new SelectList(_unitOfWork.Categories.GetAllCategory(),"Cid","Name");
             ViewBag.IsSuccess = isSuccess;
             ViewBag.Id = id;
             return View();
@@ -34,7 +37,7 @@ namespace ExpenseTrackerApp.Controllers
         {
             if (ModelState.IsValid)
                 {
-                _expenseRepository.Add(model);
+                _unitOfWork.Expenses.Add(model);
 
                 int id = model.Eid;
                 if (id > 0)
@@ -43,16 +46,16 @@ namespace ExpenseTrackerApp.Controllers
                 }
             }
 
-            ViewBag.Category = new SelectList(_categoryRepository.GetAllCategory(),"Cid","Name");
+            ViewBag.Category = new SelectList(_unitOfWork.Categories.GetAllCategory(),"Cid","Name");
             
             return View(model);
         }
 
         public ViewResult Edit(int id,bool isSuccess = false, int vid = 0)
         {
-            ExpenseModel expense = _expenseRepository.GetExpense(id);
+            ExpenseModel expense = _unitOfWork.Expenses.GetExpense(id);
 
-            ViewBag.Category = new SelectList(_categoryRepository.GetAllCategory(), "Cid", "Name");
+            ViewBag.Category = new SelectList(_unitOfWork.Categories.GetAllCategory(), "Cid", "Name");
             ViewBag.IsSuccess = isSuccess;
             ViewBag.Id = vid;
             return View(expense);
@@ -63,7 +66,7 @@ namespace ExpenseTrackerApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                _expenseRepository.Update(model);
+                _unitOfWork.Expenses.Update(model);
 
                 int id = model.Eid;
                 if (id > 0)
@@ -71,13 +74,13 @@ namespace ExpenseTrackerApp.Controllers
                     return RedirectToAction(nameof(Index), new { isSuccess = true, expenseId = id });
                 }
             }
-            ViewBag.Category = new SelectList(_categoryRepository.GetAllCategory(), "Cid", "Name");
+            ViewBag.Category = new SelectList(_unitOfWork.Categories.GetAllCategory(), "Cid", "Name");
             return View(model);
         }
 
         public IActionResult Delete(int id)
         {
-            _expenseRepository.Delete(id);
+            _unitOfWork.Expenses.Delete(id);
             return RedirectToAction(nameof(Index));
         }
 
