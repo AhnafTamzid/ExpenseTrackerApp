@@ -92,6 +92,7 @@ This application is built with ASP.NET CORE Version: 6.0.202 with Entity Framewo
 - Install [.NET Core SDK](https://dotnet.microsoft.com/download)
 - Go to ExpenseTrackerApp folder and run `dotnet restore` and `dotnet build`
 - Run `dotnet run` to start the server at `http://localhost:5177/`
+- You can also Install [Microsoft Visual Studio 2022](https://visualstudio.microsoft.com/vs/) Community Edition for free which I've used to develop this project.
 - For Database usage Install [MS SQL SERVER MANAGEMENT STUDIO](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
 <br /><br />
