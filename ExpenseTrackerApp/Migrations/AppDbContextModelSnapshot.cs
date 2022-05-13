@@ -65,6 +65,7 @@ namespace ExpenseTrackerApp.Migrations
                     b.ToTable("ExpenseModel");
                 });
 #pragma warning restore 612, 618
+
         }
     }
 }

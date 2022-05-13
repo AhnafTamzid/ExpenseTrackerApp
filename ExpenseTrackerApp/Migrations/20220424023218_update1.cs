@@ -10,7 +10,6 @@ namespace ExpenseTrackerApp.Migrations
         {
 
         }
-
         protected override void Down(MigrationBuilder migrationBuilder)
         {
 

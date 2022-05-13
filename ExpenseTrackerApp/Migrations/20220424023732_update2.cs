@@ -16,7 +16,6 @@ namespace ExpenseTrackerApp.Migrations
                 oldClrType: typeof(string),
                 oldType: "nvarchar(max)");
         }
-
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(

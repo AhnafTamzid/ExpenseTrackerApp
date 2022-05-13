@@ -11,6 +11,5 @@ namespace ExpenseTrackerApp.DataAccessLayer
         }
         public DbSet<ExpenseModel> ExpenseModel { get; set; }
         public DbSet<CategoryModel> CategoryModel { get; set; }
-
     }
 }

@@ -45,6 +45,7 @@ namespace ExpenseTrackerApp.Migrations
 
             migrationBuilder.DropTable(
                 name: "ExpenseModel");
+
         }
     }
 }
