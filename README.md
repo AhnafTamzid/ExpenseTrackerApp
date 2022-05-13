@@ -82,31 +82,17 @@ This application is built with ASP.NET CORE Version: 6.0.202 with Entity Framewo
 
 # Screenshots
 
-### Dashboard
-
-<img src="/assets/images/Dashboard.png" alt="Vue Expenses Dashnoard" width="100%" />
-
 ### Expense Listing
 
-<img src="/assets/images/Expenses.png" alt="Vue Expenses Listing" width="100%" />
+<img src="Images/Screenshot_20220513-171242_MX%20Player.jpg" alt="Expense Listing" width="100%" />
 
-### Stats
+### Add Expense
 
-<img src="/assets/images/Stats.png" alt="Vue Expenses Stats" width="100%" />
+<img src="/Images/Screenshot_20220513-171258_MX%20Player.jpg" alt="Add New Expense" width="100%" />
 
-### Settings
+### Add Category
 
-<img src="/assets/images/Settings.png" alt="Vue Expenses Settings" width="100%" />
-
-### Profile
-
-<img src="/assets/images/Profile.png" alt="Vue Expenses Profile" width="100%" />
-
-### Mobile View
-- [Dashboard](/assets/images/mobile/dashboard.png)
-- [Stats](/assets/images/mobile/Stats.png)
-
-
+<img src="/Images/Screenshot_20220513-171306_MX%20Player.jpg" alt="Add New Category" width="100%" />
 
 <!-- GETTING STARTED -->
 ## Getting Started
