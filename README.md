@@ -47,7 +47,6 @@
       <a href="#getting-started">Local Building</a>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -93,53 +92,27 @@ This application is built with ASP.NET CORE Version: 6.0.202 with Entity Framewo
 - Install [.NET Core SDK](https://dotnet.microsoft.com/download)
 - Go to ExpenseTrackerApp folder and run `dotnet restore` and `dotnet build`
 - Run `dotnet run` to start the server at `http://localhost:5177/`
+- For Database usage Install [MS SQL SERVER MANAGEMENT STUDIO](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
 <br /><br />
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- Create a database named ExpenseTrackerApp
+- Open program.cs file and change connection string to : string cs = "server=.;database=ExpenseTrackerApp;trusted_connection=true";
+- Open Package Manager Console for database table creation with code-first approach.
+- Run the commands "Add-Migration new" & "update-database"
+- Run the program
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Ahnaf Tamzid - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [Expense Tracker App](https://github.com/AhnafTamzid/ExpenseTrackerApp)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
