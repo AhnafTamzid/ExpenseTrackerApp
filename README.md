@@ -46,7 +46,7 @@
     <li>
       <a href="#getting-started">Local Building</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#startup">Startup</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -98,7 +98,7 @@ This application is built with ASP.NET CORE Version: 6.0.202 with Entity Framewo
 <br /><br />
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Startup
 
 - Create a database named ExpenseTrackerApp
 - Open program.cs file and change connection string to : string cs = "server=.;database=ExpenseTrackerApp;trusted_connection=true";
