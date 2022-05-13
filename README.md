@@ -17,35 +17,16 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+<!-- PROJECT HEADING -->
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Expense Tracker App</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    An Awesome Expense Tracking App for Your Daily Expenditure Tracking in Different Categories!
+    <br /><br /><br />
   </p>
 </div>
 
@@ -59,6 +40,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
       </ul>
     </li>
     <li>
@@ -82,18 +64,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This is a basic expense tracker app. This is developed to keep track of daily expenditure in different categories & performing CRUD operations. There's no advance features available right now but will be available on future updates hopefully :)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -101,18 +73,38 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This application is built with ASP.NET CORE Version: 6.0.202 with Entity Framework Core Version 6.0.4.
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-
+* [.NET CORE](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+* 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
+# Screenshots
+
+### Dashboard
+
+<img src="/assets/images/Dashboard.png" alt="Vue Expenses Dashnoard" width="100%" />
+
+### Expense Listing
+
+<img src="/assets/images/Expenses.png" alt="Vue Expenses Listing" width="100%" />
+
+### Stats
+
+<img src="/assets/images/Stats.png" alt="Vue Expenses Stats" width="100%" />
+
+### Settings
+
+<img src="/assets/images/Settings.png" alt="Vue Expenses Settings" width="100%" />
+
+### Profile
+
+<img src="/assets/images/Profile.png" alt="Vue Expenses Profile" width="100%" />
+
+### Mobile View
+- [Dashboard](/assets/images/mobile/dashboard.png)
+- [Stats](/assets/images/mobile/Stats.png)
 
 
 
