@@ -76,7 +76,6 @@ This is a basic expense tracker app. This is developed to keep track of daily ex
 This application is built with ASP.NET CORE Version: 6.0.202 with Entity Framework Core Version 6.0.4.
 
 * [.NET CORE](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-* 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -84,7 +83,7 @@ This application is built with ASP.NET CORE Version: 6.0.202 with Entity Framewo
 
 ### Expense Listing
 
-<img src="Images/Screenshot_20220513-171242_MX%20Player.jpg" alt="Expense Listing" width="100%" />
+<img src="/ExpenseTrackerApp/Images/Screenshot_20220513-171242_MX%20Player.jpg" alt="Expense Listing" width="100%" />
 
 ### Add Expense
 
