@@ -47,9 +47,7 @@
       <a href="#getting-started">Local Building</a>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -93,9 +91,10 @@ This application is built with ASP.NET CORE Version: 6.0.202 with Entity Framewo
 ## Local Building
 
 - Install [.NET Core SDK](https://dotnet.microsoft.com/download)
-- Go to vue-expenses-api folder and run `dotnet restore` and `dotnet build`
-- Run `dotnet run` to start the server at `http://localhost:5000/`
+- Go to ExpenseTrackerApp folder and run `dotnet restore` and `dotnet build`
+- Run `dotnet run` to start the server at `http://localhost:5177/`
 
+<br /><br />
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -103,23 +102,6 @@ This application is built with ASP.NET CORE Version: 6.0.202 with Entity Framewo
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
