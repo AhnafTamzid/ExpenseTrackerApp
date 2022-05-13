@@ -110,7 +110,7 @@ This application is built with ASP.NET CORE Version: 6.0.202 with Entity Framewo
 <!-- CONTACT -->
 ## Contact
 
-Ahnaf Tamzid - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Ahnaf Tamzid - [@Email](https://gmail.com) - tamztonmoy16@gmail.com
 
 Project Link: [Expense Tracker App](https://github.com/AhnafTamzid/ExpenseTrackerApp)
 
